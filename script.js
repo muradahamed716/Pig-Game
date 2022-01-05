@@ -55,11 +55,9 @@ buttonRoll.addEventListener('click',function(){
         }else{
             currentScore0+=dice;
             displayCurrentS(currentScore0El,currentScore0);
-            //if press hold
+           
 
         }
-
-        //if press hold
 
 
     }else{
@@ -128,6 +126,8 @@ buttonRoll.addEventListener('click',function(){
                 // player1El.classList.remove('player--active');
             }
         });
+
+        //play new game
         buttonNew.addEventListener('click',function(){
             initialSetting();
         })
