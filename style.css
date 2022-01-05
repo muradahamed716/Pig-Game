@@ -1,0 +1,145 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+body{
+    font-family: 'Nunito', sans-serif;
+    box-sizing: border-box;
+    font-size: 62.7%;
+    background: linear-gradient(to top left,rgba(125,53,121,1) 0%, rgba(186,47,59,1) 100%);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(200px);
+    filter: blur();
+    
+}
+main{
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    color:cornsilk;
+    height: 87vh;
+    width:80vw
+}
+
+.player{
+    position: relative;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.7rem;
+    color: #4e4545;
+    transition: all 0.75s;
+    background-color: rgb(255,255,255,0.3);
+}
+.player h1{
+    position: relative;
+    left: 50%;
+    top: 16%;
+    transform: translateX(-48%);
+    
+}
+.score{
+    position: absolute;
+    left: 44%;
+    top: 25%;
+    font-size: 4.5rem;
+}
+img{position: absolute;
+    width: 6rem;
+    top: 11rem;
+    left: 44%;}
+ 
+    .btn{
+    position: absolute;
+    background: none;
+    background-color: white;
+    background-color: rgb(255, 255, 255,0.6);
+    backdrop-filter: blur(10px);
+    left:40%;
+    padding: 0.7rem 2rem;
+    border-radius: 50rem;
+    border:none;
+    transition: all 0.2s;
+    font-size: 1.15rem;
+   
+    }
+ /* 
+    .btn {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #444;
+        background: none;
+        border: none;
+        font-family: inherit;
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        cursor: pointer;
+        font-weight: 400;
+        transition: all 0.2s;
+      
+        background-color: white;
+        background-color: rgba(255, 255, 255, 0.6);
+        backdrop-filter: blur(10px);
+      
+        padding: 0.7rem 2.5rem;
+        border-radius: 50rem;
+        box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
+      }
+     */  
+   .btn:active{
+       transform: translateX(-50%,3px); 
+       box-shadow: 0 1.75rem 3.5rem rgb(0 0 0 / 10%);
+    }
+    /*test*/
+
+
+.new{
+   
+    top:8%;
+    }
+.roll{
+    
+    top:68%;
+}
+.hold{
+    top: 80%;
+    left: 43%;
+}
+.current{position: absolute;
+    background: #c7365f;
+    padding: 1.5rem 3.5rem;
+    left: 29%;
+    top: 69%;
+    border-radius: 0.5rem;
+    color: #edc0c0;}
+.player--0{
+   
+    border-radius: 0.7rem 0rem 0rem 0.7rem;
+}
+.player--1{
+   
+    border-radius: 0rem 0.7rem 0.7rem 0rem;
+}
+.player--active{
+    background-color: rgb(255,255,255,0.6);
+    color:black
+}
+.btn:active {
+    transform: translate(0%, 20%);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  }
+  
+  .btn:focus {
+    outline: none;
+  }
+  .hidden{
+      display: none;
+  }
