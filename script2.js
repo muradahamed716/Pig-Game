@@ -80,6 +80,8 @@ let switchPlayer=function(){
             document.querySelector(`.player--${activePlayer}`).classList.add('player--winner');
             //finish the game
             playing=false;
+            diceEl.classList.add('hidden');
+
         }else{
         //9.switch player
         switchPlayer();
