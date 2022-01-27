@@ -128,7 +128,10 @@ img{position: absolute;
    
     border-radius: 0rem 0.7rem 0.7rem 0rem;
 }
-
+.player--active{
+    background-color: rgb(255,255,255,0.6);
+    color:black
+}
 .btn:active {
     transform: translate(0%, 20%);
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
@@ -137,90 +140,7 @@ img{position: absolute;
   .btn:focus {
     outline: none;
   }
-  
- @media (max-width:1020px) and (min-width:770px) { 
-    main {
-    height: 88vh;
-    width: 94vw;
-    }
-    .player h1 {
-    top: 16%;
-    }
-    .new {
-    top: 3%;
-    }
-   .btn{
-       font-size: 1rem;
-       padding:0.5rem 1rem;
-       left:42%
-   }
-   .hold{
-       left:44%
-   }
-   .current {
-    padding: 1.5rem 3.5rem;
-    left: 22%;
-   }
- }
-@media (max-width:770px){
-    main {
-    height: 94vh;
-    width: 97vw;
-    }
-   .btn{
-       font-size: 1rem;
-       padding:0.5rem 1rem;
-   }
-   .current {
-    padding: 1rem 2rem;
-    
-   }
-   .current-0{
-    left: 20%;
-   }
-   .current-1{
-    left: 32%;
-   }
-   img{
-       left:42%;
-   }
-   .score{
-       font-size: 3.5rem;
-   }
-}
-@media (max-width:550px){
-    main {
-    height: 97vh;
-    width: 99vw;
-    }
-    .btn{
-       font-size: 1rem;
-       padding:0.5rem 1rem;
-   }
-   
-   .current {
-    padding: 0.7rem 1rem;
-    
-   }
-   .current-0{
-    left: 10%;
-   }
-   .current-1{
-    left: 44%;
-   }
-   .player{
-       font-size: 1.3rem;
-   }
-   img{
-       left:40%;
-   }
-   
-}
-.player--active{
-    background-color: rgb(255,255,255,0.6);
-    color:black
-}
-.player--winner {
+  .player--winner {
     background-color: #2f2f2f;
   }
   
